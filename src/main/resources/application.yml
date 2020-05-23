@@ -1,0 +1,10 @@
+server:
+  port: 8888
+
+#文件保存的磁盘路径
+file:
+  path: /Users/fxq/Desktop/tmp/temp/
+
+spring:
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:${file.path}
